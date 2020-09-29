@@ -1,7 +1,7 @@
 <div class = "container"> 
     <div class = "row">
-        <div class = "col-md-6"><h3 class = "textcenter">Search for Weather:</h3>
-        <form>
+        <div class = "col-md-6"><h3 class = "textcenter my-4">Search for Weather:</h3>
+        <form [formGroup] = "weatherSearchForm">
             <div class = "form-group">
                 <input
                     class = "form-control"
@@ -9,6 +9,7 @@
                     id = "weatherLocation"
                     aria-describeby ="weatherLocation" 
                     placeholder = "Please input a Location"
+                    formControlName = "location"
                     /> 
 
             </div>
@@ -19,6 +20,6 @@
             </div>
         </form>
         </div>
-        <div class = "col-md-6"><h3 class = "textcenter">Weather Details:</h3></div>
+        <div class = "col-md-6"><h3 class = "textcenter my-4">Weather Details:</h3></div>
     </div>
 </div>

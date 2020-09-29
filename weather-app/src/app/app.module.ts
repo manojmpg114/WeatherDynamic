@@ -8,6 +8,8 @@ import { WeatherComponent } from './weather/weather.component';
 import {RouterModule} from '@angular/router';
 import {allAppRoutes} from './routes';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import {allAppRoutes} from './routes';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(allAppRoutes)
+    RouterModule.forRoot(allAppRoutes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
