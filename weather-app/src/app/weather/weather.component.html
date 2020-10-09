@@ -28,9 +28,9 @@
            <p class = "text-center">
                 Temperature in Degrees Farenheit: {{weatherData?.current.temperature}}
             </p>
-            <p class = "text-center">Feels like in Degrees Celsius:</p>
-            <p class = "text-center">Feels like in Degrees Farenheit</p>
-            <p class = "text-center">Location Searched: </p>
+            <p class = "text-center">Humidity: {{weatherData?.current.humidity}}</p>
+            <p class = "text-center">Feels like in Degrees Farenheit: {{weatherData?.current.feelslike}}</p>
+            <p class = "text-center">Location Searched: {{weatherData?.location.name}}  {{weatherData?.location.region}}</p>
         </div>
     </div>
 </div>
