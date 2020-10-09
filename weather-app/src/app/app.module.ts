@@ -11,6 +11,7 @@ import {allAppRoutes} from './routes';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ApixuService } from './apixu.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ApixuService } from './apixu.service';
     AppRoutingModule,
     RouterModule.forRoot(allAppRoutes),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [ApixuService],
   bootstrap: [AppComponent]
